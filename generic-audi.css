@@ -39,6 +39,12 @@ font-weight: var(--font-weight-light);
 src: url(https://assets.audi.com/audi-fonts/1/AudiType-WideLight.woff2) format("woff2"), url(https://assets.audi.com/audi-fonts/1/AudiType-WideLight.woff) format("woff")
 }
 
+.audi-iconfont {
+display: inline-block;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
 
 .acs-wrapper { 
 font-family: "AudiTypeWide-Normal", sans-serif
