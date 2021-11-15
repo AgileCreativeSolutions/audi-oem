@@ -46,6 +46,63 @@ text-rendering: auto;
 -moz-osx-font-smoothing: grayscale;
 }
 
+.acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
+font-family: "AudiTypeExtended-Bold", sans-serif;
+font-weight: 700;
+line-height: 1.2;
+}
+
+.acs-h1 {
+font-size: 2rem;
+}
+
+.acs-h2 {
+font-size: 1.8rem;
+}
+
+.acs-h3 {
+font-size: 1.6rem;
+}
+
+.acs-h4 {
+font-size: 1.4rem;
+}
+
+.acs-h5 {
+font-size: 1.2rem;
+}
+
+.acs-h6 {
+font-size: 1.1rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 575px) {
+.acs-h1 {
+font-size: 2.5rem !important;
+}
+
+.acs-h2 {
+font-size: 2.2rem !important;
+}
+
+.acs-h3 {
+font-size: 1.8rem !important;
+}
+
+.acs-h4 {
+font-size: 1.6rem !important;
+}
+
+.acs-h5 {
+font-size: 1.4rem !important;
+}
+
+.acs-h6 {
+font-size: 1.2rem !important;
+}
+}
+
 .acs-wrapper { 
 font-family: "AudiTypeWide-Normal", sans-serif
 }
@@ -232,7 +289,7 @@ border: solid 1px var(--gray3)
 /* BUTTONS: END */
 
 
-/* Volvo Icon */
+/* Audi Icon */
 .acs-audi-icon {
 display: inline-flex;
 -moz-osx-font-smoothing: grayscale;
@@ -247,4 +304,4 @@ right: 0;
 top: 1px;
 padding: 0 1px;
 }
-/* Volvo Icon */
+/* Audi Icon */
