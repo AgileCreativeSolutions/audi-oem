@@ -1,4 +1,4 @@
-/* Font */
+/* OEM Font Embed */
 @font-face {
 font-family: "AudiTypeExtended-Bold";
 font-style: normal;
@@ -38,14 +38,19 @@ font-weight: 200;
 font-weight: var(--font-weight-light);
 src: url(https://assets.audi.com/audi-fonts/1/AudiType-WideLight.woff2) format("woff2"), url(https://assets.audi.com/audi-fonts/1/AudiType-WideLight.woff) format("woff")
 }
+/* OEM Font Embed */
 
-.audi-iconfont {
-display: inline-block;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+
+
+/* OEM Font */
+.acs-wrapper { 
+font-family: "AudiTypeWide-Normal", sans-serif
 }
+/* OEM Font */
 
+
+
+/* Heading Tags */
 .acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
 font-family: "AudiTypeExtended-Bold", sans-serif;
 font-weight: 700;
@@ -102,15 +107,32 @@ font-size: 1.4rem !important;
 font-size: 1.2rem !important;
 }
 }
+/* Heading Tags */
 
-.acs-wrapper { 
-font-family: "AudiTypeWide-Normal", sans-serif
+
+
+/* OEM Font Variables */
+.audi-brand-wide-lt {
+font-family: "AudiTypeWide-Light" !important; 
+font-weight: 100 !important;
+}
+
+.audi-brand-extended-rg {
+font-family: "AudiTypeExtended-Normal" !important;
+font-weight: 300 !important;
+}
+
+.audi-brand-extended-bd {
+font-family: "AudiTypeExtended-Bold" !important;
+font-weight: 400 !important;
 }
 
 .acs-bold {
 font-family: var(--bold-font);   
 font-weight: 700;
 }
+/* OEM Font Variables */
+
 
 
 /* Variables */
@@ -125,6 +147,7 @@ font-weight: 700;
 --dark2: #3a4349;
 --bold-font: "AudiTypeWide-Bold", sans-serif;
 }
+/* Variables */
 
 
 
@@ -150,35 +173,50 @@ color: var(--dark)
 .acs-dark2 {
 color: var(--dark2)
 }
+/* Text Colors */
+
 
 
 /* Accent Colors */
 .acs-accent {
 color: var(--accent)
 }
+/* Accent Colors */
 
 
 
 /* BG Colors */
 .acs-bg-accent {
-background-color: var(--accent)
+--acs-bg-opacity: 1;
+background-color: var(--accent);
+background-color: rgba(230,10,50, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
-background-color: var(--gray)
+--acs-bg-opacity: 1;
+background-color: var(--gray);
+background-color: rgba(242,242,242, var(--acs-bg-opacity))
 }
 .acs-bg-gray2 {
-background-color: var(--gray2)
+--acs-bg-opacity: 1;
+background-color: var(--gray2);
+background-color: rgba(170,170,170, var(--acs-bg-opacity))
 }
 .acs-bg-gray3 {
-background-color: var(--gray3)
+--acs-bg-opacity: 1;
+background-color: var(--gray3);
+background-color: rgba(170,170,170, var(--acs-bg-opacity))
 }
 .acs-bg-dark {
-background-color: var(--dark)
+--acs-bg-opacity: 1;
+background-color: var(--dark);
+background-color: rgba(76,76,76, var(--acs-bg-opacity))
 }
 .acs-bg-dark2 {
-background-color: var(--dark2)
+--acs-bg-opacity: 1;
+background-color: var(--dark2);
+background-color: rgba(58,67,73, var(--acs-bg-opacity))
 }
-
+/* BG Colors */
 
 
 
@@ -200,6 +238,8 @@ transition: all 0.2s ease-in-out 0s;
 .acs-link-accent2:hover {
 color: var(--gray2) !important; 
 }
+/* Link Accent */
+
 
 
 /* BUTTONS: START */
@@ -289,13 +329,22 @@ border: solid 1px var(--gray3)
 /* BUTTONS: END */
 
 
-/* Audi Icon */
+
+/* OEM Font Icon */
+.audi-iconfont {
+display: inline-block;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
 .acs-audi-icon {
 display: inline-flex;
 -moz-osx-font-smoothing: grayscale;
 position: relative;
 padding-right: 1.3em;
 }
+
 .acs-audi-icon::after {
 font-family: FontAwesome;
 content: "\f105";
@@ -304,4 +353,4 @@ right: 0;
 top: 1px;
 padding: 0 1px;
 }
-/* Audi Icon */
+/* OEM Font Icon */
